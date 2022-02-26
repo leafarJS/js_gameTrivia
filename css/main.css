@@ -1,0 +1,83 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+body {
+  background-image: linear-gradient(45deg, yellow, orange 70%);
+  color: #fff;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+#game {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.genre-column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background-image: linear-gradient(-45deg, yellow, orange);
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-style: italic;
+}
+.true-btn,
+.false-btn {
+  width: 45%;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 8px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+.true-btn {
+  background-color: green;
+}
+.false-btn {
+  background-color: red;
+}
+.correct-answer {
+  background-image: linear-gradient(
+    45deg,
+    rgb(252, 252, 252),
+    rgb(8, 255, 243)
+  );
+}
+.incorrect-answer {
+  background-image: linear-gradient(
+    -45deg,
+    rgb(249, 250, 250),
+    rgb(39, 32, 39)
+  );
+}
